@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.one {
+  background-image: url("https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRpZXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  height: 30vh;
+  width: 23%;
+  border: 2px solid hotpink;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px green;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two {
+  background-image: url("https://images.unsplash.com/photo-1531928351158-2f736078e0a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGlldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  height: 30vh;
+  width: 23%;
+  border: 2px solid hotpink;
+  border-radius: 10px;
+  color: rgb(17, 31, 60);
+  box-shadow: 2px 4px 10px rgb(17, 31, 60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.three {
+  background-image: url("https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRpZXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  height: 30vh;
+  width: 23%;
+  border: 2px solid darkmagenta;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 2px 4px 10px darkmagenta;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.four {
+  background-image: url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=853&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 23%;
+  border: 2px solid hotpink;
+  border-radius: 10px;
+  color: blanchedalmond;
+  box-shadow: 2px 4px 10px hotpink;
+}
+.your {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.menu,
+.vitamins,
+.proteins {
+  width: 20%;
+  height: 30vh;
+  background: rgb(17, 31, 60);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 4px 10px green;
+}
+hr {
+  border: 2px solid rgb(17, 31, 60);
+}
+h4 {
+  text-align: center;
+  color: rgb(17, 31, 60);
+  font-size: 5vh;
+}
+h4 > span {
+  color: maroon;
+}
+.last{
+    border: 2px solid maroon;
+}
+ul li{
+    list-style: circle;
+   
+}
+ol li{
+    list-style-type: "→";
+}
+
+/* media query styling */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* For large devices */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5vh;
+    justify-content: space-evenly;
+  }
+  .one {
+    width: 23%;
+    height: 40vh;
+  }
+  .two {
+    width: 23%;
+    height: 40vh;
+  }
+  .three {
+    width: 23%;
+    height: 40vh;
+  }
+  .four {
+    width: 23%;
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  /* For medium devices*/
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5vh;
+    justify-content: space-evenly;
+  }
+  .one {
+    width: 48%;
+    height: 40vh;
+    margin-bottom: 3%;
+  }
+  .two {
+    width: 48%;
+    height: 40vh;
+    margin-bottom: 3%;
+  }
+  .three {
+    width: 48%;
+    height: 40vh;
+    margin-bottom: 3%;
+  }
+  .four {
+    width: 48%;
+    height: 40vh;
+    margin-bottom: 3%;
+  }
+}
+/* for portrait orientation */
+@media only screen and (min-width: 240px) and (max-width: 480px) and (orientation: portrait) {
+  /* For mobile phones */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 2.5vh;
+  }
+  .one {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .two {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .three {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .four {
+    width: 100%;
+  }
+}
+
+/* For landscape orientation 
+/* @media only screen and (min-width: 240px) and (max-width: 480px) and (orientation:landscape){
+    /* For mobile phones 
+    .cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      font-size: 2.5vh;
+      justify-content: space-between;
+    }
+    .one {
+      width: 50%;
+      margin-bottom: 3%;
+      height: 100vh;
+      float: left;
+    }
+    .two{
+        width: 100%;
+        margin-bottom: 3%;
+        height: 100vh;
+    }
+    .three{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .four{
+        width: 100%;
+    }
+  }*/
